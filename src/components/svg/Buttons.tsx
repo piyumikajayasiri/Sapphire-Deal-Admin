@@ -35,6 +35,38 @@ export const Raffle = () => {
   );
 };
 
+export function Disable() {
+  return (
+    <>
+      <svg
+        width='25'
+        height='25'
+        viewBox='0 0 25 25'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <rect width='25' height='25' fill='url(#pattern0_1078_1278)' />
+        <defs>
+          <pattern
+            id='pattern0_1078_1278'
+            patternContentUnits='objectBoundingBox'
+            width='1'
+            height='1'
+          >
+            <use href='#image0_1078_1278' transform='scale(0.01)' />
+          </pattern>
+          <image
+            id='image0_1078_1278'
+            width='100'
+            height='100'
+            href='data:image/png;base64,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'
+          />
+        </defs>
+      </svg>
+    </>
+  );
+}
+
 export const Trigger = () => {
   return (
     <>
@@ -108,31 +140,198 @@ export const Vouchers = () => {
 export const Delete = () => {
   return (
     <>
+      <div>
+        {' '}
+        <svg
+          width='26'
+          height='26'
+          viewBox='0 0 26 26'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <rect width='26' height='26' fill='url(#pattern0_776_440)' />
+          <defs>
+            <pattern
+              id='pattern0_776_440'
+              patternContentUnits='objectBoundingBox'
+              width='1'
+              height='1'
+            >
+              <use href='#image0_776_440' transform='scale(0.02)' />
+            </pattern>
+            <image
+              id='image0_776_440'
+              width='50'
+              height='50'
+              href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChUlEQVR4nO2av2sUURDHV1N4mpAiQWw0phG3EiRYiKJtKuMfkDbHlbGIhfgDhJBCSBCJYCwsAykFOYiFmmBQSEy00LMQwSIiKFGwUAs/MpcRnufb2x+3e3l77BcGbubNm3nfnX2zu7freQUKuA/gLPAEeBcij4EznosA+oDvwCawECKb6tvnuQbgCts4FcH3tPpe9lwCsAf4CDyPMWcF+ASUsl2dV0/WBfjAUIhc0iN8LYLvXxFfdG6Yry9rSUriMPAWd1ADBpIQuQv8AiaA8g7LhK5lLgmRR8CGoe9uGI+ltxoD2JA1JSWybugPgFlDX5NOZeylD3L0VO8FvgAjhv95tfWqXtY59XMfuCoxDf/bktPQ19Mi8gaoGvoWcE9/l/Q8nlJ9UPVxw39cbYOqT6le71oSC9gy/KuSMwsiUSoy1qQiIyEVkeuQWZHZNCvSEXtkzqGudVHXcicJkQHdF67gNXAoNhHLlf293lYMtUlWNGdrV3YLqX+6VtagoWulGbgg4nxFgH0BvqWg9ht0294Yi3YRAfYDP4FzFt8XwLTFPiNjFrtcLH9IzJ0gIp1EULH4ykPWvMU+L2MWe0Vj+QURRyoyprGO5P3UOgBcAHblmkhAvmruiAAngCWgO+9Eiq4VG51ckb3AfeBYrok0Q66IsP3QdR04mHciRzV5Oe9E/E7Z7H6nEOkHvgLDFt+nwKTFPiljFvuw/nPZ33YiavvvKbCZPc4cXGi/KeWrFkQiVOQbsJqCPANOGi+UzLFKOyryGXiYgsgij2vcGw1jo1kTeQUspx44ON8y8DKLwLeA38BihA8CWpVFzXUzCyI9+jqsFuETjValpi96elInUqCAFwt/AAhNhkQMfalwAAAAAElFTkSuQmCC'
+            />
+          </defs>
+        </svg>
+      </div>
+    </>
+  );
+};
+
+export const CreateTrigger = () => {
+  return (
+    <svg
+      width='30'
+      height='30'
+      viewBox='0 0 30 30'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect width='30' height='30' fill='url(#pattern0_1093_1582)' />
+      <defs>
+        <pattern
+          id='pattern0_1093_1582'
+          patternContentUnits='objectBoundingBox'
+          width='1'
+          height='1'
+        >
+          <use href='#image0_1093_1582' transform='scale(0.0333333)' />
+        </pattern>
+        <image
+          id='image0_1093_1582'
+          width='30'
+          height='30'
+          href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVElEQVR4nO2VO0oDURSGR8F0ESGF4h608gGuwGCvixCXYCyC6A4EHzvRJjFaioUKxsrE3kQt4ycHzuDl5DqZZ7DIBxfCf5j/Y+7MnQTBhP8MsAV0gQ5QHae4wy+v4xAuAHWGkWy+KOkO0ONvZLZdhHTAaAaJ5cA00JJl8sURd2p5l0diOlpAUxw+cVUvfDb5Icmpm4625ps+8bkO901+n0J8Zzpqmp/5xE86XDH5Vwrxp+lY0/zBJ/7QYdnkqTAdZY37PnFfh7MFiOc07vnEjzpcdbKptGK51ulZj9rq8OWqOVklg7ji9Bxodhp1nNpOtpxBvOT0vEQdp/AD0nCyvQziXafnWtfwB8QHcJVBfBlLYtGz9002NoIkADPALdm5ka4k4hPy4yKuVF6wvGnGEcvfV940Ym/3hBDgzbOV3aBogGOP+Ggc4pLK5c5lye9S4eK8+AHmhsINZO+xIAAAAABJRU5ErkJggg=='
+        />
+      </defs>
+    </svg>
+  );
+};
+export const Details = () => {
+  return (
+    <svg
+      width='22'
+      height='21'
+      viewBox='0 0 22 21'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect x='0.5' width='21' height='21' fill='url(#pattern0_614_62)' />
+      <defs>
+        <pattern
+          id='pattern0_614_62'
+          patternContentUnits='objectBoundingBox'
+          width='1'
+          height='1'
+        >
+          <use href='#image0_614_62' transform='scale(0.0111111)' />
+        </pattern>
+        <image
+          id='image0_614_62'
+          width='90'
+          height='90'
+          href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBElEQVR4nO3cO07DQBSFYYsCKbADtsAG3OZcp3ObnlUQOpeElodIx6rYAY8OKACJymhQaBJssOPcMcn/SSMhyxrwYRij4YgkAQAAAAAA2GLj8XjXzM4kPZhZ2WRIujezaZgj9nP0XgiqacC2PKaxn6P32qxkWx6PsZ+j9zoIuQwj9nP0HkE7IWgnNb9RfEg6zrLsIAxJk3Ct6daR5/mepCtJLy2+qc9mdpmm6SDW/B5BTxbvDdeaBm1msw5+amax5u9M1ScPq3jx3nCtSdBFUeyY2fuqQUh6C3N5z98pgra4Qf+0dWRZdhJp67iONb/Xy3Cy6sswTdOBmV3MXzxNA3iSdF73slr3/J3pYDWUdUGDoH2xop3MjzpX3TruvL7erT4mlXQa+zn+y8H/tM3KFgf/AAAAfUOvwwm9Dif0OpxwqOSEoJ0QdH+CvpmPVn9hyel1/Cno29FotB9G+LhN0Eavoz5oSa/D4fDwO7DwcbjWJOiCXsfvW4eko8XgwjWCbqlqX665/ybC1rGRvY6vfbnq/qr9OqlAr6M66FYjQeMVTdDrQNBO6HU4odfhhF4HAADARqHX4YRehxN6HU44VHJC0E4I2kmL+kBJr6OHQRu9jvUHXdDr8FnRBUH7BB3Q63AKOuX/ddQHR6+jYwTthKCd0OtwQq/DCb0OAAAAAACAZOt9AuQRksmRSF9TAAAAAElFTkSuQmCC'
+        />
+      </defs>
+    </svg>
+  );
+};
+
+export function Next() {
+  return (
+    <>
       <svg
-        width='26'
-        height='26'
-        viewBox='0 0 26 26'
+        width='15'
+        height='15'
+        viewBox='0 0 15 15'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
-        <rect width='26' height='26' fill='url(#pattern0_776_440)' />
+        <rect width='15' height='15' fill='url(#pattern0_4583_4277)' />
         <defs>
           <pattern
-            id='pattern0_776_440'
+            id='pattern0_4583_4277'
             patternContentUnits='objectBoundingBox'
             width='1'
             height='1'
           >
-            <use href='#image0_776_440' transform='scale(0.02)' />
+            <use href='#image0_4583_4277' transform='scale(0.0333333)' />
           </pattern>
           <image
-            id='image0_776_440'
-            width='50'
-            height='50'
-            href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChUlEQVR4nO2av2sUURDHV1N4mpAiQWw0phG3EiRYiKJtKuMfkDbHlbGIhfgDhJBCSBCJYCwsAykFOYiFmmBQSEy00LMQwSIiKFGwUAs/MpcRnufb2x+3e3l77BcGbubNm3nfnX2zu7freQUKuA/gLPAEeBcij4EznosA+oDvwCawECKb6tvnuQbgCts4FcH3tPpe9lwCsAf4CDyPMWcF+ASUsl2dV0/WBfjAUIhc0iN8LYLvXxFfdG6Yry9rSUriMPAWd1ADBpIQuQv8AiaA8g7LhK5lLgmRR8CGoe9uGI+ltxoD2JA1JSWybugPgFlDX5NOZeylD3L0VO8FvgAjhv95tfWqXtY59XMfuCoxDf/bktPQ19Mi8gaoGvoWcE9/l/Q8nlJ9UPVxw39cbYOqT6le71oSC9gy/KuSMwsiUSoy1qQiIyEVkeuQWZHZNCvSEXtkzqGudVHXcicJkQHdF67gNXAoNhHLlf293lYMtUlWNGdrV3YLqX+6VtagoWulGbgg4nxFgH0BvqWg9ht0294Yi3YRAfYDP4FzFt8XwLTFPiNjFrtcLH9IzJ0gIp1EULH4ykPWvMU+L2MWe0Vj+QURRyoyprGO5P3UOgBcAHblmkhAvmruiAAngCWgO+9Eiq4VG51ckb3AfeBYrok0Q66IsP3QdR04mHciRzV5Oe9E/E7Z7H6nEOkHvgLDFt+nwKTFPiljFvuw/nPZ33YiavvvKbCZPc4cXGi/KeWrFkQiVOQbsJqCPANOGi+UzLFKOyryGXiYgsgij2vcGw1jo1kTeQUspx44ON8y8DKLwLeA38BihA8CWpVFzXUzCyI9+jqsFuETjValpi96elInUqCAFwt/AAhNhkQMfalwAAAAAElFTkSuQmCC'
+            id='image0_4583_4277'
+            width='30'
+            height='30'
+            href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WsQ2AMAxEUS9BBPtvQoMUqKBgnI+spKMljoB7C5x0si2biZgZMAMbkEILATLFERoODMBew09gUnhzqPZCAxcDSPW4uPXbwdzXa1ToY1RvU/xmep0fhV6vz9Ll2ZNXuwDGhWxO00J2+wAAAABJRU5ErkJggg=='
           />
         </defs>
       </svg>
     </>
   );
-};
+}
+export function Previous() {
+  return (
+    <>
+      <svg
+        width='15'
+        height='15'
+        viewBox='0 0 15 15'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <rect
+          x='15'
+          y='15'
+          width='15'
+          height='15'
+          transform='rotate(-180 15 15)'
+          fill='url(#pattern0_4583_4289)'
+        />
+        <defs>
+          <pattern
+            id='pattern0_4583_4289'
+            patternContentUnits='objectBoundingBox'
+            width='1'
+            height='1'
+          >
+            <use href='#image0_4583_4289' transform='scale(0.0333333)' />
+          </pattern>
+          <image
+            id='image0_4583_4289'
+            width='30'
+            height='30'
+            href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WsQ2AMAxEUS9BBPtvQoMUqKBgnI+spKMljoB7C5x0si2biZgZMAMbkEILATLFERoODMBew09gUnhzqPZCAxcDSPW4uPXbwdzXa1ToY1RvU/xmep0fhV6vz9Ll2ZNXuwDGhWxO00J2+wAAAABJRU5ErkJggg=='
+          />
+        </defs>
+      </svg>
+    </>
+  );
+}
+
+export function SalesButtonSVG() {
+  return (
+    <>
+      <svg
+        width='23'
+        height='26'
+        viewBox='0 0 23 26'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <rect width='23' height='26' fill='url(#pattern0_1078_1286)' />
+        <defs>
+          <pattern
+            id='pattern0_1078_1286'
+            patternContentUnits='objectBoundingBox'
+            width='1'
+            height='1'
+          >
+            <use
+              href='#image0_1078_1286'
+              transform='matrix(0.02 0 0 0.0176923 0 0.0576923)'
+            />
+          </pattern>
+          <image
+            id='image0_1078_1286'
+            width='50'
+            height='50'
+            href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsUlEQVR4nO2YMWsUQRiGVwkiMQpq7ki0shBs02hnYmJhIUiCXTrxB6goIZ16TTpLwUJbUxliYX6AYKNRcwELC7GKYhETRVTUJ3y5b8m47s7O7t66ezAvLFy+eXdmnp2Zb2YSBF5eXl5edRLQBFrAS+CrPsvAbaBRYrvOcqnsIrBpqWMDmKo1CB2IP+p9BIwC+/QZAxa07DcwWQZMnIA+4LETiE6ncCRuWHwz6vkMDAYlC9gFPNA2P7mAtMKRMGJ7gHvAfMS7qN5bJXMEwJy2Jev0pAvIK/WMGhDhcK5FvGc0vlwyxFVt5ydwTmOpIOG0GjDm5UHgYwzIfvVuFuikTOWmpXxa16s800Y8G4gRX4sBOaDejZwQDWAFeAMMx5RPAD+0jWuRslQQ2TNEYw4g4+p9kXMk2kYCapsjA5zS9SCai3k/FUQ2O9FCJD4fs9jDtXOzAEQ78rsJnDAy033JWHlAGrrZiWYsvln1rAOHC0A0I7FV4L3+lg/Vl1CPHURNU7rZoSlWstOAPuPGSIjnQhGIhDLRU6DftW5bo5O62SVpvVsQMZ5VyZSFIYyKB2Wzk8UMfNGM9lzWhDmdgEMpKTQVIuI9avy9ra5BWRoeAl5bUmiYYlHPUMb6t9XVTsc0cgx4y47+gikKIQorDhzjmQWMAB+0vmcpmcg6nSoDAU4biWBJj/fWvaFAW+WAAOeBb8ZdZW/CVIqdTkkd6FbcSXqAkxOo6C6wO+X89M+aqBwEuGLcGlt5T7SVgrBzGxSQ65lergMInevlHX3nF3ApP0JFIHRuhg/V/z3pPyZZh/i/ggD9wBP1ytHkbFUdIy+IXmvl5IlueCOJ5pqDXFbPO+C4DaLWIEaqPRI4qNYgvdBhPEjNvjwJ8VT1HAg16xgepGZfmIzxyjvgQby8vLyCXtUWBGsW+cA65c4AAAAASUVORK5CYII='
+          />
+        </defs>
+      </svg>
+    </>
+  );
+}
