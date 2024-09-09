@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 import { Card } from '@/components/ui/card';
 
 import SalesTable from '@/app/(roots)/sales/sales-list/components/sales';
@@ -13,13 +14,10 @@ const SalesList = async () => {
 
       const json = await response.json();
       return json;
-    } catch (error) {
-      console.error('Error fetching data:', error); // Log the error
-    }
+    } catch (error) {}
   }
 
   const data = await getData();
-  console.log('Wandana Malini Shehan 123');
 
   return (
     <div className='relative min-h-screen w-full bg-white'>

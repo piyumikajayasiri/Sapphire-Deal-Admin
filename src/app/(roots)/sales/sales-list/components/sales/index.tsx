@@ -1,9 +1,10 @@
+/* eslint-disable unused-imports/no-unused-vars */
 'use client';
 
 import { useRouter } from 'next/navigation'; // Changed from 'next/router'
-import { useEffect } from 'react';
 
 import Badge, { BadgeProps } from '@/components/badge';
+import { SearchBar } from '@/components/table/searchbar';
 import { TableHeader, TableRow, Tables } from '@/components/tables';
 import { Button } from '@/components/ui/button';
 
@@ -48,11 +49,6 @@ interface CustomTableRow extends TableRow {
 }
 
 const SalesTable: React.FC<SalesTableProps> = ({ salesData }) => {
-  useEffect(() => {
-    // Effect: Fetch data or run some logic
-    console.log('malini wandana shahan');
-  });
-
   const router = useRouter();
 
   const headers: TableHeader[] = [
@@ -88,16 +84,23 @@ const SalesTable: React.FC<SalesTableProps> = ({ salesData }) => {
   }));
 
   return (
-    <div className='relative bg-white p-10 pt-0 mt-5'>
-      <Tables
-        tableHeaders={headers}
-        tableRows={rows}
-        currentPage={0}
-        totalPages={0}
-        onPageChange={function (): void {
+    <div>
+      <SearchBar
+        onSearch={function (query: string): void {
           throw new Error('Function not implemented.');
         }}
       />
+      <div className='relative bg-white p-10 pt-0 mt-5'>
+        <Tables
+          tableHeaders={headers}
+          tableRows={rows}
+          currentPage={0}
+          totalPages={0}
+          onPageChange={function (): void {
+            throw new Error('Function not implemented.');
+          }}
+        />
+      </div>
     </div>
   );
 };

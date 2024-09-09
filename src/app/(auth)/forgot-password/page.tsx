@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -34,7 +35,6 @@ const ForgotPassword = () => {
     validateEmail(email);
 
     if (!emailError) {
-      console.log('Login attempt with:', { email });
     }
   };
 
@@ -62,7 +62,7 @@ const ForgotPassword = () => {
                   aria-describedby={emailError ? 'email-error' : undefined}
                   className={cn(
                     emailError &&
-                      'border-red-500 placeholder-red-500 text-red-500',
+                      'border-red-500 placeholder-red-500 text-red-500'
                   )}
                 />
                 {emailError && (
