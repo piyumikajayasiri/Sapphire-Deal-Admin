@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 
 import EditButton from '@/components/buttons/editButton';
 
-import AddressModal from '@/app/(screen)/admin-user-profile/contact-information/components/addressModal';
-import PhoneModal from '@/app/(screen)/admin-user-profile/contact-information/components/phoneModal';
+import AddressModal from '@/app/(roots)/admin-user-profile/contact-information/components/addressModal';
+import PhoneModal from '@/app/(roots)/admin-user-profile/contact-information/components/phoneModal';
 
 const ContactInfo = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

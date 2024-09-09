@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AdminOrganizationApproval from '@/app/(screen)/organization/admin-organization-approval/components/admin-approval-approval';
+import AdminOrganizationApproval from '@/app/(roots)/organization/admin-organization-approval/components/admin-approval-approval';
 
 const AdminOrganizationApprovalPage = () => {
   return (

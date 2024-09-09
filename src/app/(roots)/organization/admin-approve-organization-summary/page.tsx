@@ -15,11 +15,11 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 
-import AdminOrganizationBranches from '@/app/(screen)/organization/admin-approve-organization-summary/components/admin-organization-branches';
-import AdminOrganizationEmployees from '@/app/(screen)/organization/admin-approve-organization-summary/components/admin-organization-employees';
-import OrganizationAddresses from '@/app/(screen)/organization/admin-approve-organization-summary/components/organization-actresses';
-import OrganizationGallery from '@/app/(screen)/organization/admin-approve-organization-summary/components/organization-gallary';
-import OrganizationInformation from '@/app/(screen)/organization/admin-approve-organization-summary/components/organization-information';
+import AdminOrganizationBranches from '@/app/(roots)/organization/admin-approve-organization-summary/components/admin-organization-branches';
+import AdminOrganizationEmployees from '@/app/(roots)/organization/admin-approve-organization-summary/components/admin-organization-employees';
+import OrganizationAddresses from '@/app/(roots)/organization/admin-approve-organization-summary/components/organization-actresses';
+import OrganizationGallery from '@/app/(roots)/organization/admin-approve-organization-summary/components/organization-gallary';
+import OrganizationInformation from '@/app/(roots)/organization/admin-approve-organization-summary/components/organization-information';
 
 const AdminApproveOrganizationSummary = () => {
   const [activeTab, setActiveTab] = useState<string>('summary');
