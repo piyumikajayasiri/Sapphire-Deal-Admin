@@ -1,7 +1,8 @@
-export default function Dashboard() {
+export default function Dashboard(props: { className: string | undefined }) {
   return (
     <>
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'
@@ -17,10 +18,11 @@ export default function Dashboard() {
   );
 }
 
-export function Organization() {
+export function Organization(props: { className: string | undefined }) {
   return (
     <>
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'
@@ -49,11 +51,12 @@ export function Organization() {
   );
 }
 
-export function Approve() {
+export function Approve(props: { className: string | undefined }) {
   return (
     <>
       {' '}
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'
@@ -72,8 +75,8 @@ export function Approve() {
           </pattern>
           <image
             id='image0_2634_850'
-            width='30'
-            height='30'
+            width='25'
+            height='25'
             href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR4nO3WO04CURSA4VsSC0JpIrAEbFyAdvasYbYAbEATWAANFm5AO8IrMUK0sTGBlopAIxUhhPjKb9BT8DgDRufMNPzlnDPzFZO5Gef27Qh45KcmEHNhxWoXUcFvwGEU8KJcVHAnDDSuwOMw4EsFfrFGj4CZAt9bw9folf/74Af8ewY++XuvQAtIa/Ac+5oaPJJhcu16kE00uCfDjCFc0+C2DE8N4RMNvpVh1hCua/CVDD1DeKrBJRnmDeE7DS7IsGgEP/l9x54sVIzg1gYqQFYWbozgqR98ph36pqfWIuBYFrpuqQDAD6Chvl8BUrI4DBjuq+AScIBNg62w4DWfm7//q4AEUAXef4sC5zvhfc6wL3kkVKHh/2tqAAAAAElFTkSuQmCC'
           />
         </defs>
@@ -81,13 +84,14 @@ export function Approve() {
     </>
   );
 }
-export function Sales() {
+export function Sales(props: { className: string | undefined }) {
   return (
     <>
       <svg
-        width='19'
-        height='22'
-        viewBox='0 0 19 22'
+        className={props.className}
+        width='25'
+        height='25'
+        viewBox='0 0 25 25'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
@@ -99,10 +103,11 @@ export function Sales() {
     </>
   );
 }
-export function Raffles() {
+export function Raffles(props: { className: string | undefined }) {
   return (
     <>
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'
@@ -117,10 +122,11 @@ export function Raffles() {
     </>
   );
 }
-export function Vouchers() {
+export function Vouchers(props: { className: string | undefined }) {
   return (
     <>
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'
@@ -148,13 +154,14 @@ export function Vouchers() {
     </>
   );
 }
-export function Users() {
+export function Users(props: { className: string | undefined }) {
   return (
     <>
       <svg
-        width='21'
-        height='15'
-        viewBox='0 0 21 15'
+        className={props.className}
+        width='25'
+        height='25'
+        viewBox='0 0 25 25'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
@@ -166,10 +173,11 @@ export function Users() {
     </>
   );
 }
-export function Profile() {
+export function Profile(props: { className: string | undefined }) {
   return (
     <>
       <svg
+        className={props.className}
         width='25'
         height='25'
         viewBox='0 0 25 25'

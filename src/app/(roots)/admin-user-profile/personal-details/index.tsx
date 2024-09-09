@@ -4,10 +4,10 @@ import { SetStateAction, useState } from 'react';
 
 import EditButton from '@/components/buttons/editButton';
 
-import BirthdayModal from '@/app/(screen)/admin-user-profile/personal-details/components/birthdayModal';
-import GenderModal from '@/app/(screen)/admin-user-profile/personal-details/components/GenderModal';
-import LanguageModal from '@/app/(screen)/admin-user-profile/personal-details/components/LanguageModal';
-import NameModal from '@/app/(screen)/admin-user-profile/personal-details/components/nameModal';
+import BirthdayModal from '@/app/(roots)/admin-user-profile/personal-details/components/birthdayModal';
+import GenderModal from '@/app/(roots)/admin-user-profile/personal-details/components/GenderModal';
+import LanguageModal from '@/app/(roots)/admin-user-profile/personal-details/components/LanguageModal';
+import NameModal from '@/app/(roots)/admin-user-profile/personal-details/components/nameModal';
 
 import ProfileImage from '../../../../../public/images/ProfileImage.png';
 

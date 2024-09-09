@@ -4,7 +4,7 @@
 import { useRouter } from 'next/navigation'; // Changed from 'next/router'
 
 import Badge, { BadgeProps } from '@/components/badge';
-import { SearchBar } from '@/components/table/searchbar';
+import { SearchBar } from '@/components/search-bar';
 import { TableHeader, TableRow, Tables } from '@/components/tables';
 import { Button } from '@/components/ui/button';
 

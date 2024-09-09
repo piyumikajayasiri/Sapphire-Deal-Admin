@@ -12,7 +12,7 @@ import Dashboard, {
   Sales,
   Users,
   Vouchers,
-} from '@/components/svg/NavigationSVG';
+} from '../../components/svg/NavigationSVG';
 
 export default function SideNavigationBarOrganization() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ export default function SideNavigationBarOrganization() {
                 href='#'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Dashboard />
+                <Dashboard className={undefined} />
 
                 <span className='ms-3'>Dashboard</span>
               </a>
@@ -75,7 +75,7 @@ export default function SideNavigationBarOrganization() {
                 href='#'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Organization />
+                <Organization className={undefined} />
                 <span className='flex-1 ms-3 whitespace-nowrap'>
                   Organization
                 </span>
@@ -87,17 +87,17 @@ export default function SideNavigationBarOrganization() {
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
                 onClick={toggleApproveSubmenu}
               >
-                <Approve />
+                <Approve className={undefined} />
                 <span className='flex-1 ms-3 whitespace-nowrap'>Approve</span>
               </a>
               {isApproveSubmenuOpen && (
                 <ul className='space-y-2 ml-8'>
                   <li>
                     <a
-                      href='#'
+                      href='organization/admin-organization-approval'
                       className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
                     >
-                      <Organization />
+                      <Organization className={undefined} />
                       <span className='ms-3'>Organization</span>
                     </a>
                   </li>
@@ -106,7 +106,7 @@ export default function SideNavigationBarOrganization() {
                       href='#'
                       className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
                     >
-                      <Raffles />
+                      <Raffles className={undefined} />
                       <span className='ms-3'>Raffles</span>
                     </a>
                   </li>
@@ -115,7 +115,7 @@ export default function SideNavigationBarOrganization() {
                       href='#'
                       className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
                     >
-                      <Sales />
+                      <Sales className={undefined} />
                       <span className='ms-3'>Sales</span>
                     </a>
                   </li>
@@ -124,7 +124,7 @@ export default function SideNavigationBarOrganization() {
                       href='#'
                       className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
                     >
-                      <Vouchers />
+                      <Vouchers className={undefined} />
                       <span className='ms-3'>Vouchers</span>
                     </a>
                   </li>
@@ -137,7 +137,7 @@ export default function SideNavigationBarOrganization() {
                 href='#'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Raffles />
+                <Raffles className={undefined} />
 
                 <span className='flex-1 ms-3 whitespace-nowrap'>Raffles</span>
               </a>
@@ -148,7 +148,7 @@ export default function SideNavigationBarOrganization() {
                 href='/sales/sales-list'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Sales />
+                <Sales className={undefined} />
 
                 <span className='flex-1 ms-3 whitespace-nowrap'>Sales</span>
               </a>
@@ -159,7 +159,7 @@ export default function SideNavigationBarOrganization() {
                 href='#'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Vouchers />
+                <Vouchers className={undefined} />
 
                 <span className='flex-1 ms-3 whitespace-nowrap'>Vouchers</span>
               </a>
@@ -169,7 +169,7 @@ export default function SideNavigationBarOrganization() {
                 href='#'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Users />
+                <Users className={undefined} />
 
                 <span className='flex-1 ms-3 whitespace-nowrap'>Users</span>
               </a>
@@ -179,7 +179,7 @@ export default function SideNavigationBarOrganization() {
                 href='/admin-user-profile'
                 className='flex items-center p-2 text-white rounded-lg hover:bg-blue-900'
               >
-                <Profile />
+                <Profile className={undefined} />
 
                 <span className='flex-1 ms-3 whitespace-nowrap'>Profile</span>
               </a>
